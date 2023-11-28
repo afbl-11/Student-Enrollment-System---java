@@ -72,44 +72,52 @@ public class UserService {
  */
 
   // Save a user to the file
-  private void saveUserToFile(User user) throws IOException {
+  // Save a user to the file
+// Save a user to the file
+private void saveUserToFile(User user) throws IOException {
     File file = new File(userDB);
     if (!file.exists()) {
-      boolean isCreated = file.createNewFile();
-      if (!isCreated) {
-        throw new IOException("Failed to create user database file.");
-      }
+        boolean isCreated = file.createNewFile();
+        if (!isCreated) {
+            throw new IOException("Failed to create user database file.");
+        }
     }
 
-    try (
-      BufferedWriter writer = new BufferedWriter(new FileWriter(file, true))
-    ) {
-      String userInfo =
-        user.getFirstName() +
-        "," +
-        user.getMiddleInitial() +
-                      "," +
-        user.getLastName() +
-                      "," +
-        user.getStudentId() +
-        "," +
-        user.getPassword() +
-        "," +
-        user.getUserType();
-      if (user instanceof Student) {
-        Student student = (Student) user;
-        userInfo += "," + student.doesQualify();
-        String courses = String.join(";", student.getEnrolledCourses());
-        if (!courses.isEmpty()) {
-          userInfo += "," + courses;
+    try (BufferedWriter writer = new BufferedWriter(new FileWriter(file, true))) {
+        String userInfo =
+                user.getFirstName() +
+                        "," +
+                        user.getMiddleInitial() +
+                        "," +
+                        user.getLastName() +
+                        "," +
+                        user.getStudentId() +
+                        "," +
+                        user.getPassword() +
+                        "," +
+                        user.getUserType();
+
+        if (user instanceof Student) {
+            Student student = (Student) user;
+            userInfo += "," + student.doesQualify() + ",";
+
+            // Check if the student qualifies and has enrolled courses
+            if (student.doesQualify()) {
+                List<String> courses = student.getEnrolledCourses();
+                if (!courses.isEmpty()) {
+                  String coursesString = String.join(";", courses);
+                    userInfo += "," + coursesString;
+                }
+            }
+        } else if (user instanceof Teacher) {
+            userInfo += "," + ((Teacher) user).getCredentials();
         }
-      } else if (user instanceof Teacher) {
-        userInfo += "," + ((Teacher) user).getCredentials();
-      }
-      writer.write(userInfo);
-      writer.newLine();
+
+        writer.write(userInfo);
+        // writer.newLine();
     }
-  }
+}
+
 
   // Check if a user exists this is for the login and register
   private boolean userExists(String username) throws IOException {
@@ -130,3 +138,4 @@ public class UserService {
     return false;
   }
 }
+

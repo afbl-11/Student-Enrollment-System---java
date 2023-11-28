@@ -64,13 +64,19 @@ public class UserRegistration {
                 double doesqualify = validateGrade();
 
                 if (doesqualify >= qualifyingGrade) {
-                    System.out.println("Select course, year, adn section: ");
-                    String selectCourse = scanner.nextLine();
-                    String selectYear = scanner.nextLine();
-                    String selectSection = scanner.nextLine();
-                    courses = CourseService.courseSelection(selectCourse, selectYear, selectSection); // Handle course selection
                     
-                    userService.register(firstName,middleInitial,lastName,studentId, password, userType, doesqualify, null, courses); //would register user, bring fields to function in user service
+                    System.out.println("Select course: ");
+                    String selectCourse = scanner.nextLine();
+                    System.out.println("Select year level");
+                    String selectYear = scanner.nextLine();
+                    System.out.println("Select section: ");
+                    String selectSection = scanner.nextLine();
+
+                   
+                    
+                    userService.register(firstName, middleInitial, lastName, studentId, password, userType, doesqualify,
+                            null, courses); //would register user, bring fields to function in user service
+                    CourseService.courseSelection(selectCourse, selectYear, selectSection); // Handle course selection
                 } 
                  else {
                     System.out.println("Sorry but you don't meet the school standards.");
@@ -102,11 +108,10 @@ public class UserRegistration {
             String courseSection = scanner.nextLine();
             courseSection = courseSection.toUpperCase();
 
-            CourseService.courseSelection(courseInstructed, courseYear, courseSection);
-
             String employeeId = generateIdNumber();
             userService.register(firstName,middleInitial,lastName,employeeId, password, userType, 0, courseInstructed,null);
-                //identifies if teacher
+            CourseService.courseSelection(courseInstructed, courseYear, courseSection);
+            //identifies if teacher
             } else {
                 System.out.println("Invalid user type.");
             }

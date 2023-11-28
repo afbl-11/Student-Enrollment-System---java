@@ -22,6 +22,7 @@ public class Main {
                 case 1:
                     userRegistration.getRegistration();
                     System.out.println("it works");
+                    
                     break;
                 case 2:
                     Userlogin.getLogin();

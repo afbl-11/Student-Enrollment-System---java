@@ -10,8 +10,7 @@ public class Student extends User {
     public Student(String firstName,String middleInitial, String lastName, String password,String studentID) {
         super(firstName,middleInitial,lastName, studentID, password);
         this.enrolledCourses = new ArrayList<>();
-        this.averageGrade = averageGrade;
-        this.gradesQualify = averageGrade >= 80.0;
+        this.gradesQualify = averageGrade > 80.00;
     }
 
     @Override

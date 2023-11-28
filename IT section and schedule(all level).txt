@@ -1,0 +1,72 @@
+Course,Year,Section,Date and Time,Subject,Price (PHP)
+IT,1,IT01A,Monday 7:00 AM - 9:00 AM,MajorSubject1,5000
+IT,1,IT01A,Tuesday 9:30 AM - 11:30 AM,Subject2,3500
+IT,1,IT01A,Wednesday 12:00 PM - 2:00 PM,Subject3,3500
+IT,1,IT01A,Thursday 2:30 PM - 4:30 PM,MajorSubject2,5000
+IT,1,IT01A,Friday 5:00 PM - 7:00 PM,Subject5,3500
+
+IT,1,IT01B,Monday 7:15 AM - 9:15 AM,Subject3,3500
+IT,1,IT01B,Tuesday 9:45 AM - 11:45 AM,MajorSubject1,5000
+IT,1,IT01B,Wednesday 12:15 PM - 2:15 PM,Subject2,3500
+IT,1,IT01B,Thursday 2:45 PM - 4:45 PM,Subject4,3500
+IT,1,IT01B,Friday 5:15 PM - 7:15 PM,MajorSubject2,5000
+
+IT,1,IT01C,Monday 7:30 AM - 9:30 AM,Subject5,3500
+IT,1,IT01C,Tuesday 10:00 AM - 12:00 PM,MajorSubject1,5000
+IT,1,IT01C,Wednesday 12:30 PM - 2:30 PM,MajorSubject2,5000
+IT,1,IT01C,Thursday 3:00 PM - 5:00 PM,Subject4,3500
+IT,1,IT01C,Friday 5:30 PM - 7:30 PM,Subject1,3500
+
+IT,2,IT02A,Monday 7:45 AM - 9:45 AM,MajorSubject2,5000
+IT,2,IT02A,Tuesday 10:15 AM - 12:15 PM,Subject1,3500
+IT,2,IT02A,Wednesday 12:45 PM - 2:45 PM,MajorSubject1,5000
+IT,2,IT02A,Thursday 3:15 PM - 5:15 PM,Subject4,3500
+IT,2,IT02A,Friday 6:00 PM - 8:00 PM,Subject5,3500
+
+IT,2,IT02B,Monday 8:00 AM - 10:00 AM,Subject4,3500
+IT,2,IT02B,Tuesday 10:30 AM - 12:30 PM,Subject2,3500
+IT,2,IT02B,Wednesday 1:00 PM - 3:00 PM,MajorSubject1,5000
+IT,2,IT02B,Thursday 3:30 PM - 5:30 PM,MajorSubject2,5000
+IT,2,IT02B,Friday 6:15 PM - 8:15 PM,Subject3,3500
+
+IT,2,IT02C,Monday 8:15 AM - 10:15 AM,MajorSubject1,5000
+IT,2,IT02C,Tuesday 10:45 AM - 12:45 PM,Subject5,3500
+IT,2,IT02C,Wednesday 1:15 PM - 3:15 PM,Subject3,3500
+IT,2,IT02C,Thursday 3:45 PM - 5:45 PM,MajorSubject2,5000
+IT,2,IT02C,Friday 6:30 PM - 8:30 PM,Subject2,3500
+
+IT,3,IT03A,Monday 8:30 AM - 10:30 AM,Subject1,3500
+IT,3,IT03A,Tuesday 11:00 AM - 1:00 PM,Subject2,3500
+IT,3,IT03A,Wednesday 1:30 PM - 3:30 PM,MajorSubject1,5000
+IT,3,IT03A,Thursday 4:00 PM - 6:00 PM,Subject4,3500
+IT,3,IT03A,Friday 6:45 PM - 8:45 PM,MajorSubject2,5000
+
+IT,3,IT03B,Monday 8:45 AM - 10:45 AM,Subject4,3500
+IT,3,IT03B,Tuesday 11:15 AM - 1:15 PM,Subject2,3500
+IT,3,IT03B,Wednesday 2:00 PM - 4:00 PM,MajorSubject1,5000
+IT,3,IT03B,Thursday 4:30 PM - 6:30 PM,MajorSubject2,5000
+IT,3,IT03B,Friday 7:15 PM - 9:15 PM,Subject3,3500
+
+IT,3,IT03C,Monday 9:00 AM - 11:00 AM,MajorSubject1,5000
+IT,3,IT03C,Tuesday 11:30 AM - 1:30 PM,Subject5,3500
+IT,3,IT03C,Wednesday 2:15 PM - 4:15 PM,Subject3,3500
+IT,3,IT03C,Thursday 4:45 PM - 6:45 PM,MajorSubject2,5000
+IT,3,IT03C,Friday 7:30 PM - 9:30 PM,Subject2,3500
+
+IT,4,IT04A,Monday 9:15 AM - 11:15 AM,MajorSubject2,5000
+IT,4,IT04A,Tuesday 11:45 AM - 1:45 PM,Subject1,3500
+IT,4,IT04A,Wednesday 2:30 PM - 4:30 PM,MajorSubject1,5000
+IT,4,IT04A,Thursday 5:00 PM - 7:00 PM,Subject4,3500
+IT,4,IT04A,Friday 7:45 PM - 9:45 PM,Subject5,3500
+
+IT,4,IT04B,Monday 9:30 AM - 11:30 AM,Subject4,3500
+IT,4,IT04B,Tuesday 12:00 PM - 2:00 PM,Subject2,3500
+IT,4,IT04B,Wednesday 2:45 PM - 4:45 PM,MajorSubject1,5000
+IT,4,IT04B,Thursday 5:15 PM - 7:15 PM,MajorSubject2,5000
+IT,4,IT04B,Friday 8:00 PM - 10:00 PM,Subject3,3500
+
+IT,4,IT04C,Monday 9:45 AM - 11:45 AM,MajorSubject1,5000
+IT,4,IT04C,Tuesday 12:15 PM - 2:15 PM,Subject5,3500
+IT,4,IT04C,Wednesday 3:00 PM - 5:00 PM,Subject3,3500
+IT,4,IT04C,Thursday 5:30 PM - 7:30 PM,MajorSubject2,5000
+IT,4,IT04C,Friday 8:15 PM - 10:15 PM,Subject2,3500
